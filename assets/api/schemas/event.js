@@ -5,19 +5,19 @@
   "required": true,
   "properties": {
     "eventType": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "playlistId": {
-      "type": "number",
+      "type": "uuid",
       "required": true
     },
     "songId": {
-      "type": "number",
+      "type": "uuid",
       "required": true
     },
     "userId": {
-      "type": "number",
+      "type": "uuid",
       "required": true
     }
   }
