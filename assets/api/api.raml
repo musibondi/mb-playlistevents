@@ -1,0 +1,14 @@
+#%RAML 1.0
+---
+title: Playlist Manager API
+baseUri: http://localhost:8080/api/{version}
+protocols: WSS
+version: v1
+/event:
+  post:
+    description: New event being pushed from the UI.
+    body:
+      application/json:
+        schema: !include schemas/event.js
+        example: !include examples/event.js
+
